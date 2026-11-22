@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dcowdkyaklcij"]
+
+[ext_resource type="Texture2D" uid="uid://bn54hprgvm4jj" path="res://assets/sprites/skep/idle.png" id="1_6gf1e"]
+[ext_resource type="Script" uid="uid://c3hhx8ruhlhdo" path="res://objects/scripts/skep.gd" id="1_vym7s"]
+[ext_resource type="Texture2D" uid="uid://b0mbb6mapy3u2" path="res://assets/sprites/skep/idle_flip.png" id="2_thx7j"]
+[ext_resource type="PackedScene" uid="uid://jhjeax1kvroq" path="res://objects/ui.tscn" id="4_g3hhs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6f66"]
+size = Vector2(17, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p6f66"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_thx7j")
+}],
+"loop": 1,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6gf1e")
+}],
+"loop": 1,
+"name": &"right",
+"speed": 5.0
+}]
+
+[node name="skep" type="CharacterBody2D" unique_id=1087360219]
+script = ExtResource("1_vym7s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1897721432]
+position = Vector2(-2.5, -1.5)
+shape = SubResource("RectangleShape2D_p6f66")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=233593285]
+texture_filter = 1
+position = Vector2(-2, -2)
+sprite_frames = SubResource("SpriteFrames_p6f66")
+animation = &"right"
+
+[node name="ui" parent="." unique_id=1453003046 instance=ExtResource("4_g3hhs")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -482.0
+offset_top = -321.0
+offset_right = -482.0
+offset_bottom = -321.0
+grow_horizontal = 1
+grow_vertical = 1

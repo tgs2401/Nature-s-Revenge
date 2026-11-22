@@ -1,0 +1,9 @@
+TODO
+
+code in worm movement / health (might not have time)
+make more maps
+more enemy variety (wip)
+credits (edit: nvm it's just me LOL)
+options(?)
+tree monsters only activate when player is close(?)
+LET SKEP KILL PEOPLE!1!!1!!!!1!! (actually dunno how im supposed to do that)

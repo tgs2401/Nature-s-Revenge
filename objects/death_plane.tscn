@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://vu233u7npogk"]
+
+[ext_resource type="Script" uid="uid://bv1jxxyo6fql2" path="res://objects/scripts/death_plane.gd" id="1_a5djd"]
+[ext_resource type="Texture2D" uid="uid://b05k56axrft2m" path="res://assets/sprites/water2.png" id="2_1iyb2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5dovc"]
+size = Vector2(8366, 301)
+
+[node name="death plane" type="Area2D" unique_id=779252988]
+script = ExtResource("1_a5djd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=879653478]
+position = Vector2(1531, 656.5)
+shape = SubResource("RectangleShape2D_5dovc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=746585415]
+position = Vector2(1536.0001, 659.5)
+scale = Vector2(52.350006, 1.90625)
+texture = ExtResource("2_1iyb2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

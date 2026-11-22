@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://coq0d0rrcxrim"]
+
+[ext_resource type="PackedScene" uid="uid://blxrhc6uoxk61" path="res://assets/maps/map2.tscn" id="1_vffac"]
+[ext_resource type="PackedScene" uid="uid://dcowdkyaklcij" path="res://objects/skep.tscn" id="2_st3ta"]
+[ext_resource type="PackedScene" uid="uid://vu233u7npogk" path="res://objects/death_plane.tscn" id="3_kccvk"]
+[ext_resource type="PackedScene" uid="uid://bssokbbw0q7ss" path="res://objects/door.tscn" id="4_qumfa"]
+[ext_resource type="PackedScene" uid="uid://ydbj7f8qrp3w" path="res://objects/cactusenemy.tscn" id="5_kccvk"]
+[ext_resource type="PackedScene" uid="uid://nuoldkhxtglq" path="res://objects/tree_monster.tscn" id="6_qumfa"]
+
+[node name="map_2" type="Node2D" unique_id=1435575775]
+
+[node name="map2" parent="." unique_id=1564146824 instance=ExtResource("1_vffac")]
+
+[node name="skep" parent="map2" unique_id=1087360219 instance=ExtResource("2_st3ta")]
+position = Vector2(108, 230)
+
+[node name="death plane" parent="map2" unique_id=779252988 instance=ExtResource("3_kccvk")]
+position = Vector2(72, -202)
+
+[node name="door" parent="map2" unique_id=674599262 instance=ExtResource("4_qumfa")]
+position = Vector2(5193, 262)
+
+[node name="cactusenemy" parent="map2" unique_id=1774043593 instance=ExtResource("5_kccvk")]
+position = Vector2(835, 198)
+
+[node name="cactusenemy2" parent="map2" unique_id=1113731285 instance=ExtResource("5_kccvk")]
+position = Vector2(1187, 214)
+
+[node name="cactusenemy3" parent="map2" unique_id=1947041432 instance=ExtResource("5_kccvk")]
+position = Vector2(1783, 230)
+
+[node name="cactusenemy4" parent="map2" unique_id=93229768 instance=ExtResource("5_kccvk")]
+position = Vector2(3001, 246)
+
+[node name="treemonster" parent="map2" unique_id=744795500 instance=ExtResource("6_qumfa")]
+position = Vector2(1114, 214)
+
+[node name="treemonster2" parent="map2" unique_id=1815838589 instance=ExtResource("6_qumfa")]
+position = Vector2(2542, 246)
+
+[node name="treemonster3" parent="map2" unique_id=750339787 instance=ExtResource("6_qumfa")]
+position = Vector2(3315, 262)
+
+[node name="treemonster4" parent="map2" unique_id=548764898 instance=ExtResource("6_qumfa")]
+position = Vector2(3357, 262)
+
+[node name="cactusenemy5" parent="map2" unique_id=1782787254 instance=ExtResource("5_kccvk")]
+position = Vector2(3702, 246)
+
+[node name="treemonster5" parent="map2" unique_id=1992861800 instance=ExtResource("6_qumfa")]
+position = Vector2(4795, 278)
+
+[node name="cactusenemy6" parent="map2" unique_id=129155656 instance=ExtResource("5_kccvk")]
+position = Vector2(5115, 262)

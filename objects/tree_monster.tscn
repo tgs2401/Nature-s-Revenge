@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://nuoldkhxtglq"]
+
+[ext_resource type="Script" uid="uid://ddns7tpdp3j0c" path="res://objects/scripts/tree_monster.gd" id="1_bqyp5"]
+[ext_resource type="Texture2D" uid="uid://b2570y0lw25s3" path="res://assets/sprites/evil tree monster thing/walk1.png" id="1_cjwho"]
+[ext_resource type="Texture2D" uid="uid://ysmgsmkh08ux" path="res://assets/sprites/evil tree monster thing/walk2.png" id="2_bqyp5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6f66"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p6f66"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cjwho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bqyp5")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gpj4"]
+size = Vector2(24, 21)
+
+[node name="treemonster" type="CharacterBody2D" unique_id=1774043593]
+script = ExtResource("1_bqyp5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=920399404]
+shape = SubResource("RectangleShape2D_p6f66")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1855200828]
+texture_filter = 1
+scale = Vector2(1, 0.8333333)
+sprite_frames = SubResource("SpriteFrames_p6f66")
+animation = &"walk"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=839927399]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1853990768]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_6gpj4")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

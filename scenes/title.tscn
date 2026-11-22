@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cnh0436p22m4f"]
+
+[ext_resource type="Texture2D" uid="uid://d3k6rc0js6x5v" path="res://assets/sprites/bg.png" id="1_4ignj"]
+[ext_resource type="Script" uid="uid://bsba52sogqsq6" path="res://scenes/scripts/title.gd" id="1_p6dhs"]
+[ext_resource type="FontFile" uid="uid://bcekuo6hnj1yx" path="res://assets/sprites/pixel.otf" id="2_wosw1"]
+[ext_resource type="AudioStream" uid="uid://cs5c5a6nlxha4" path="res://assets/music/title theme mayb.ogg" id="4_pyl7j"]
+
+[sub_resource type="Theme" id="Theme_p6f66"]
+default_font = ExtResource("2_wosw1")
+default_font_size = 32
+
+[node name="title" type="Node2D" unique_id=2136939000]
+script = ExtResource("1_p6dhs")
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=1556583114]
+position = Vector2(640, 360)
+texture = ExtResource("1_4ignj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1705393265]
+offset_left = 22.0
+offset_top = 164.0
+offset_right = 1423.0
+offset_bottom = 415.0
+theme = SubResource("Theme_p6f66")
+theme_override_font_sizes/normal_font_size = 72
+text = "Nature's Revenge"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=2011005593]
+offset_left = 371.0
+offset_top = 296.0
+offset_right = 1772.0
+offset_bottom = 547.0
+theme = SubResource("Theme_p6f66")
+theme_override_font_sizes/normal_font_size = 80
+text = "made by TGS"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." unique_id=1239928649]
+offset_left = 11.0
+offset_top = 467.0
+offset_right = 1214.0
+offset_bottom = 748.0
+theme = SubResource("Theme_p6f66")
+theme_override_font_sizes/normal_font_size = 52
+text = "ENTER: Begin Game
+ESCAPE: Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1820852132]
+stream = ExtResource("4_pyl7j")
+autoplay = true
+max_distance = 4096.0
+parameters/looping = true

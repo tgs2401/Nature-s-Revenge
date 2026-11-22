@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cs5c5a6nlxha4"
+path="res://.godot/imported/title theme mayb.ogg-b1ab83a13b1b0aaf951d47efa56759ba.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/title theme mayb.ogg"
+dest_files=["res://.godot/imported/title theme mayb.ogg-b1ab83a13b1b0aaf951d47efa56759ba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

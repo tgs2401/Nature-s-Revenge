@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dajjk7x2gjw3e"]
+
+[ext_resource type="Texture2D" uid="uid://dc1i2bj0pjdcc" path="res://assets/sprites/angryworm.png" id="1_2o3ar"]
+[ext_resource type="Script" uid="uid://cghkulvs10gm" path="res://objects/scripts/worm.gd" id="1_ru717"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6f66"]
+
+[node name="Area2D" type="Area2D" unique_id=1630072805]
+script = ExtResource("1_ru717")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=192681143]
+shape = SubResource("RectangleShape2D_p6f66")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2062765441]
+texture_filter = 1
+position = Vector2(2.3841858e-07, 5.364418e-07)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("1_2o3ar")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://d0b5hpxuipl7p"]
+
+[ext_resource type="PackedScene" uid="uid://dcowdkyaklcij" path="res://objects/skep.tscn" id="1_bbd8t"]
+[ext_resource type="PackedScene" path="res://assets/maps/map1.tscn" id="2_ae8pb"]
+[ext_resource type="PackedScene" uid="uid://vu233u7npogk" path="res://objects/death_plane.tscn" id="3_ae8pb"]
+[ext_resource type="PackedScene" uid="uid://nuoldkhxtglq" path="res://objects/tree_monster.tscn" id="4_nli1r"]
+[ext_resource type="PackedScene" uid="uid://bssokbbw0q7ss" path="res://objects/door.tscn" id="5_hm8ck"]
+[ext_resource type="Texture2D" uid="uid://83qygj2r2wam" path="res://assets/sprites/water.png" id="6_5565n"]
+
+[sub_resource type="GDScript" id="GDScript_nli1r"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="map_1" type="Node2D" unique_id=1302336250]
+script = SubResource("GDScript_nli1r")
+
+[node name="skep" parent="." unique_id=1087360219 instance=ExtResource("1_bbd8t")]
+position = Vector2(115, 230)
+
+[node name="map1" parent="." unique_id=1418539358 instance=ExtResource("2_ae8pb")]
+z_index = -4
+
+[node name="death plane" parent="." unique_id=779252988 instance=ExtResource("3_ae8pb")]
+position = Vector2(70, -200)
+
+[node name="treemonster" parent="." unique_id=1774043593 instance=ExtResource("4_nli1r")]
+position = Vector2(417, 230)
+
+[node name="treemonster2" parent="." unique_id=970319303 instance=ExtResource("4_nli1r")]
+position = Vector2(751, 230)
+
+[node name="treemonster3" parent="." unique_id=179962639 instance=ExtResource("4_nli1r")]
+position = Vector2(1413, 246)
+
+[node name="treemonster4" parent="." unique_id=928008710 instance=ExtResource("4_nli1r")]
+position = Vector2(1742, 230)
+
+[node name="treemonster5" parent="." unique_id=1360021115 instance=ExtResource("4_nli1r")]
+position = Vector2(2587, 214)
+
+[node name="treemonster6" parent="." unique_id=1462149766 instance=ExtResource("4_nli1r")]
+position = Vector2(3345, 262)
+
+[node name="treemonster7" parent="." unique_id=821094042 instance=ExtResource("4_nli1r")]
+position = Vector2(4454, 262)
+
+[node name="treemonster8" parent="." unique_id=925403922 instance=ExtResource("4_nli1r")]
+position = Vector2(4966, 262)
+
+[node name="treemonster9" parent="." unique_id=366574281 instance=ExtResource("4_nli1r")]
+position = Vector2(5197, 278)
+
+[node name="door" parent="." unique_id=674599262 instance=ExtResource("5_hm8ck")]
+position = Vector2(5570, 230)
+
+[node name="Water" type="Sprite2D" parent="." unique_id=1386493400]
+visible = false
+position = Vector2(2253, 457.00003)
+scale = Vector2(219.25, 13.687502)
+texture = ExtResource("6_5565n")
