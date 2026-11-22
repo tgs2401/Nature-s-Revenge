@@ -16,9 +16,11 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor() and old:
 		velocity += get_gravity() * delta
 	if goes_left:
-		self.global_position.x -= 0.5
+		# self.global_position.x -= 0.5
+		pass
 	else:
-		self.global_position.x += 0.5
+		# self.global_position.x += 0.5
+		pass
 		
 	if (is_on_wall() and frames_til_not_on_wall <= 0) or (not is_on_floor() and not old):
 		goes_left = not goes_left

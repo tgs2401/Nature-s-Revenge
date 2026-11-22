@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://ddns7tpdp3j0c" path="res://objects/scripts/tree_monster.gd" id="1_bqyp5"]
 [ext_resource type="Texture2D" uid="uid://b2570y0lw25s3" path="res://assets/sprites/evil tree monster thing/walk1.png" id="1_cjwho"]
-[ext_resource type="Texture2D" uid="uid://ysmgsmkh08ux" path="res://assets/sprites/evil tree monster thing/walk2.png" id="2_bqyp5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p6f66"]
 
@@ -11,9 +10,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_cjwho")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_bqyp5")
 }],
 "loop": 1,
 "name": &"walk",

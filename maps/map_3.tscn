@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://bs2uhjb2k547a"]
+
+[ext_resource type="PackedScene" path="res://assets/maps/map3.tscn" id="1_ddv3d"]
+[ext_resource type="PackedScene" uid="uid://dcowdkyaklcij" path="res://objects/skep.tscn" id="2_to5x4"]
+[ext_resource type="PackedScene" uid="uid://bletuxlfadsh6" path="res://objects/snow_tree.tscn" id="3_to5x4"]
+[ext_resource type="PackedScene" uid="uid://nuoldkhxtglq" path="res://objects/tree_monster.tscn" id="4_ebk6l"]
+[ext_resource type="PackedScene" uid="uid://vu233u7npogk" path="res://objects/death_plane.tscn" id="5_wq2xb"]
+[ext_resource type="PackedScene" uid="uid://bssokbbw0q7ss" path="res://objects/door.tscn" id="6_wq2xb"]
+
+[node name="Map3" type="Node2D" unique_id=1559936360]
+
+[node name="map3" parent="." unique_id=1735220789 instance=ExtResource("1_ddv3d")]
+
+[node name="skep" parent="." unique_id=1087360219 instance=ExtResource("2_to5x4")]
+position = Vector2(110, 214)
+
+[node name="snowtree" parent="." unique_id=1774043593 instance=ExtResource("3_to5x4")]
+position = Vector2(500, 214)
+
+[node name="snowtree2" parent="." unique_id=1681511732 instance=ExtResource("3_to5x4")]
+position = Vector2(1541, 230)
+
+[node name="snowtree3" parent="." unique_id=2073358746 instance=ExtResource("3_to5x4")]
+position = Vector2(1581, 230)
+
+[node name="snowtree4" parent="." unique_id=772459157 instance=ExtResource("3_to5x4")]
+position = Vector2(2115, 230)
+
+[node name="snowtree5" parent="." unique_id=353572023 instance=ExtResource("3_to5x4")]
+position = Vector2(1815, 182)
+
+[node name="treemonster" parent="." unique_id=1764405238 instance=ExtResource("4_ebk6l")]
+position = Vector2(1366, 214)
+
+[node name="treemonster2" parent="." unique_id=843056624 instance=ExtResource("4_ebk6l")]
+position = Vector2(273, 230)
+
+[node name="treemonster3" parent="." unique_id=718928294 instance=ExtResource("4_ebk6l")]
+position = Vector2(870, 230)
+
+[node name="snowtree6" parent="." unique_id=1234939716 instance=ExtResource("3_to5x4")]
+position = Vector2(2382, 262)
+
+[node name="treemonster4" parent="." unique_id=1488333246 instance=ExtResource("4_ebk6l")]
+position = Vector2(2923, 214)
+
+[node name="death plane" parent="." unique_id=779252988 instance=ExtResource("5_wq2xb")]
+position = Vector2(2130, -222)
+
+[node name="snowtree7" parent="." unique_id=1108626986 instance=ExtResource("3_to5x4")]
+position = Vector2(3108, 214)
+
+[node name="treemonster5" parent="." unique_id=1583433826 instance=ExtResource("4_ebk6l")]
+position = Vector2(3779, 214)
+
+[node name="snowtree8" parent="." unique_id=1859213186 instance=ExtResource("3_to5x4")]
+position = Vector2(4275, 198)
+
+[node name="treemonster6" parent="." unique_id=1891025090 instance=ExtResource("4_ebk6l")]
+position = Vector2(4368, 230)
+
+[node name="treemonster7" parent="." unique_id=411666690 instance=ExtResource("4_ebk6l")]
+position = Vector2(4417, 230)
+
+[node name="snowtree9" parent="." unique_id=797369885 instance=ExtResource("3_to5x4")]
+position = Vector2(4938, 198)
+
+[node name="door" parent="." unique_id=674599262 instance=ExtResource("6_wq2xb")]
+position = Vector2(5229, 230)

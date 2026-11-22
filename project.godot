@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="nature fights back but you are not the nature"
+config/name="Nature's Revenge"
+config/description="evergreen game"
 run/main_scene="uid://cnh0436p22m4f"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://b3valxb21572n"
 
 [autoload]
 

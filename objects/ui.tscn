@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://1nrrf8f82788" path="res://assets/sprites/desertbg.png" id="4_0o1ci"]
 [ext_resource type="AudioStream" uid="uid://cbnwxq4wuit45" path="res://assets/music/level themeeeeee.ogg" id="4_8tcdq"]
 [ext_resource type="Script" uid="uid://1m81pb1dutt1" path="res://objects/scripts/bg.gd" id="6_3tb87"]
+[ext_resource type="Texture2D" uid="uid://dwgfgmhrlvaeb" path="res://assets/sprites/snow back.png" id="7_2ddmq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p6f66"]
 animations = [{
@@ -24,6 +25,14 @@ animations = [{
 }],
 "loop": 1,
 "name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_2ddmq")
+}],
+"loop": 1,
+"name": &"3",
 "speed": 5.0
 }]
 
